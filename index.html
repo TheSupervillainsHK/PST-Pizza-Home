@@ -15,20 +15,23 @@
             width: 100%;
             min-height: 100vh;
             min-height: 100dvh;
-            /* Exact orange extracted from PST Homepage.ai: RGB(204, 93, 24) */
             background-color: #cc5d18;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
+            align-items: center; /* Centers horizontally */
+            justify-content: flex-start; /* Anchors to the top so margin-top is absolute */
             overflow-x: hidden;
         }
 
         .vector-mark {
-            /* Increased by 20% (from 33.33vw to 40vw) */
-            width: 40vw;
-            max-width: 40%;
-            height: auto;
-            display: block;
+            /* Height dictates size: 100% of screen minus the 70px total vertical margin */
+            height: calc(100vh - 70px);
+            height: calc(100dvh - 70px);
+            width: auto;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            max-width: 90vw; /* Prevents horizontal overflow if viewed on tall, narrow mobile screens */
+            object-fit: contain;
         }
     </style>
 </head>

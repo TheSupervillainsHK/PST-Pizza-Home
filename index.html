@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PST Pizza — Hong Kong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+            /* Exact orange extracted from PST Homepage.ai: RGB(204, 93, 24) */
+            background-color: #cc5d18;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .vector-mark {
+            /* Constrains the vector width to the middle third of the screen or less */
+            width: 33.33vw;
+            max-width: 33.33%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="pst-logo.svg" alt="PST Pizza" class="vector-mark">
+</body>
+</html>
